@@ -5,7 +5,7 @@ namespace PressStart.API.DTOs
     public class UserForLoginDTO
     {
         [Required(ErrorMessage = "Invalid Login")]
-        [StringLength(16, MinimumLength = 8, ErrorMessage = "Invalid Login")]
+        [StringLength(16, MinimumLength = 4, ErrorMessage = "Invalid Login")]
         public string Username { get; set; }
 
         [Required(ErrorMessage = "Invalid Login")]
