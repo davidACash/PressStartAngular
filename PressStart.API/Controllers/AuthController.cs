@@ -28,8 +28,6 @@ namespace PressStart.API.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(UserForRegisterDTO userForRegister)
         {
-            // Validate Request
-
             userForRegister.Username = userForRegister.Username.ToLower();
 
             if (await _repo.UserExists(userForRegister.Username))
