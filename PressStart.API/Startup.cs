@@ -59,6 +59,8 @@ namespace PressStart.API
             }
             else
             {
+                // Global exception handler.
+                // See PressStart-SPA/src/app/_services/error.interceptor.ts
                 app.UseExceptionHandler(builder => {
                     builder.Run(async context => {
                         context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
