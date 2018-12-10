@@ -25,6 +25,7 @@ namespace PressStart.API.Helpers
                     opt.ResolveUsing(d => d.DateOfBirth.CalculateAge());
                 });
             CreateMap<Photo, PhotosForDetailsDTO>();
+            CreateMap<UserForUpdateDTO, User>();
         }
     }
 }
