@@ -1,8 +1,8 @@
 using System;
 
-namespace PressStart.API.Models
+namespace PressStart.API.DTOs
 {
-    public class Photo
+    public class PhotoForReturnDTO
     {
         public int Id { get; set; }
         public string Url { get; set; }
@@ -10,7 +10,5 @@ namespace PressStart.API.Models
         public DateTime DateAddeed { get; set; }
         public bool IsMain { get; set; }
         public string PublicId { get; set; }
-        public User User { get; set; }
-        public int UserId { get; set; }
     }
 }

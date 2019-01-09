@@ -26,6 +26,8 @@ namespace PressStart.API.Helpers
                 });
             CreateMap<Photo, PhotosForDetailsDTO>();
             CreateMap<UserForUpdateDTO, User>();
+            CreateMap<Photo, PhotoForReturnDTO>();
+            CreateMap<PhotoForCreationDTO, Photo>();
         }
     }
 }
